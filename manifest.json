@@ -1,9 +1,28 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"version": "1.0.0",
+	"id": "Jojje.H2SignatureSuit",
+	"name": "Hitman 2 Signature Suit",
+	"description": "Use the Hitman 2 signature suit instead of Hitman 3.",
+	"authors": ["Jojje"],
+	"frameworkVersion": "2.33.7",
+	"dependencies": ["0067E6E6596F8175", "007749C5E756ACF0"],
+	"options": [
+		{
+			"group": "Install",
+			"name": "Signature Suit",
+			"tooltip": "Replace the Signature Suit.",
+			"type": "checkbox",
+			"contentFolders": ["nogloves"],
+			"enabledByDefault": true
+		},
+		{
+			"group": "Install",
+			"name": "Signature Suit with Gloves",
+			"tooltip": "Replace the Signature Suit with Gloves.",
+			"type": "checkbox",
+			"contentFolders": ["gloves"],
+			"enabledByDefault": true
+		}
+	]
 }
