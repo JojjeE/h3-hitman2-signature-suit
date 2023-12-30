@@ -24,5 +24,6 @@
 			"contentFolders": ["gloves"],
 			"enabledByDefault": true
 		}
-	]
+	],
+	"updateCheck": "https://github.com/JojjeE/h3-hitman2-signature-suit/releases/latest/download/updates.json"
 }
