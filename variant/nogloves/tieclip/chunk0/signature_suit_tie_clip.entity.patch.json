@@ -1,0 +1,19 @@
+{
+	"tempHash": "0067E6E6596F8175",
+	"tbluHash": "0085AC7AE5219E1C",
+	"patch": [
+		{ "SubEntityOperation": ["061fccbd164422a2", { "SetName": "OUTFIT_Agent47_SignatureSuit_HeroA_V0" }] },
+		{
+			"SubEntityOperation": [
+				"feed7d8a88675511",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_pMeshResource",
+						"value": { "resource": "00F49043C64BD068", "flag": "5F" }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

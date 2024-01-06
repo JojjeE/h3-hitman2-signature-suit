@@ -6,14 +6,14 @@
 	"description": "Use the Hitman 2 signature suit instead of Hitman 3.",
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.7",
-	"dependencies": ["0067E6E6596F8175", "007749C5E756ACF0"],
+	"dependencies": ["007749C5E756ACF0"],
 	"options": [
 		{
 			"group": "Install",
 			"name": "Signature Suit",
 			"tooltip": "Replace the Signature Suit.",
 			"type": "checkbox",
-			"contentFolders": ["nogloves"],
+			"contentFolders": ["base/nogloves"],
 			"enabledByDefault": true
 		},
 		{
@@ -21,8 +21,54 @@
 			"name": "Signature Suit with Gloves",
 			"tooltip": "Replace the Signature Suit with Gloves.",
 			"type": "checkbox",
-			"contentFolders": ["gloves"],
+			"contentFolders": ["base/gloves"],
 			"enabledByDefault": true
+		},
+		{
+			"group": "Variant - Signature Suit",
+			"name": "Default",
+			"tooltip": "No change.",
+			"type": "select",
+			"enabledByDefault": true
+		},
+		{
+			"group": "Variant - Signature Suit",
+			"name": "Buttoned",
+			"tooltip": "Buttoned jacket.",
+			"type": "select",
+			"contentFolders": ["variant/nogloves/buttoned", "variant_assets/buttoned"],
+			"image": "buttoned.jpg"
+		},
+		{
+			"group": "Variant - Signature Suit",
+			"name": "Tie clip",
+			"tooltip": "With tie clip.",
+			"type": "select",
+			"contentFolders": ["variant/nogloves/tieclip"],
+			"image": "tieclip.jpg"
+		},
+		{
+			"group": "Variant - Signature Suit with Gloves",
+			"name": "Default",
+			"tooltip": "No change.",
+			"type": "select",
+			"enabledByDefault": true
+		},
+		{
+			"group": "Variant - Signature Suit with Gloves",
+			"name": "Buttoned",
+			"tooltip": "Buttoned jacket.",
+			"type": "select",
+			"contentFolders": ["variant/gloves/buttoned", "variant_assets/buttoned"],
+			"image": "buttoned.jpg"
+		},
+		{
+			"group": "Variant - Signature Suit with Gloves",
+			"name": "Tie clip",
+			"tooltip": "With tie clip.",
+			"type": "select",
+			"contentFolders": ["variant/gloves/tieclip"],
+			"image": "tieclip.jpg"
 		}
 	],
 	"updateCheck": "https://github.com/JojjeE/h3-hitman2-signature-suit/releases/latest/download/updates.json"
