@@ -82,6 +82,39 @@
 				}
 			]
 		},
+		{
+			"SubEntityOperation": [
+				"feed5815a57a9bc8",
+				{
+					"SetPropertyValue": {
+						"property_name": "Texture2D_01",
+						"value": { "resource": "00B50E687B6C87A1", "flag": "5F" }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed5815a57a9bc8",
+				{
+					"SetPropertyValue": {
+						"property_name": "Texture2D_03",
+						"value": { "resource": "0094EE70B78A825F", "flag": "5F" }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed5815a57a9bc8",
+				{
+					"AddProperty": [
+						"Texture2DNormal_01",
+						{ "type": "ZRuntimeResourceID", "value": { "resource": "004945EDF359FB75", "flag": "5F" } }
+					]
+				}
+			]
+		},
 		{ "SubEntityOperation": ["feed1c8d0ca0c5d9", { "SetParent": "feed3e8cabb44634" }] },
 		{
 			"SubEntityOperation": [
