@@ -6,4 +6,4 @@ Use the Hitman 2 signature suit instead of Hitman 3.
 
 ---
 
-`Jojje.H2SignatureSuit` v1.1.2, by Jojje. This README was automatically generated from the mod's manifest.
+`Jojje.H2SignatureSuit` v1.2.0, by Jojje. This README was automatically generated from the mod's manifest.

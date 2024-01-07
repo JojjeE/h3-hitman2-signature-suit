@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.1.2",
+	"version": "1.2.0",
 	"id": "Jojje.H2SignatureSuit",
 	"name": "Hitman 2 Signature Suit",
 	"description": "Use the Hitman 2 signature suit instead of Hitman 3.",
