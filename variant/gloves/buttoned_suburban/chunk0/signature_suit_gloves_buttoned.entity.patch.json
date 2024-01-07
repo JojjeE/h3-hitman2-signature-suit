@@ -1,0 +1,276 @@
+{
+	"tempHash": "00F8243D5271624C",
+	"tbluHash": "002DC7A855E676E4",
+	"patch": [
+		{ "RemoveEntityByID": "feed098ecfdeb485" },
+		{
+			"SubEntityOperation": [
+				"f72994fc85959905",
+				{ "RemoveEventConnection": ["Lerp", "JacketSleave_DiffuseAlbedo", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f72994fc85959905",
+				{ "AddEventConnection": ["Lerp", "JacketSleave_DiffuseAlbedo", "feed3e8cabb44634"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f72994fc85959905",
+				{ "RemoveEventConnection": ["Lerp", "Shirt_DiffuseAlbedo", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f72994fc85959905",
+				{ "AddEventConnection": ["Lerp", "Shirt_DiffuseAlbedo", "feed3e8cabb44634"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f8560475187347fc",
+				{ "RemoveEventConnection": ["Lerp", "JacketSleave_RoughnessMin", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f8560475187347fc",
+				{ "AddEventConnection": ["Lerp", "JacketSleave_RoughnessMin", "feed3e8cabb44634"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"36d50539308426b0",
+				{ "RemoveEventConnection": ["Lerp", "JacketSleave_NormalBump", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"36d50539308426b0",
+				{ "AddEventConnection": ["Lerp", "JacketSleave_NormalBump", "feed3e8cabb44634"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"36d50539308426b0",
+				{ "RemoveEventConnection": ["Lerp", "Shirt_NormalBump", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"36d50539308426b0",
+				{ "AddEventConnection": ["Lerp", "Shirt_NormalBump", "feed3e8cabb44634"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"061fccbd164422a2",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aBodyParts",
+						[
+							{ "AddItemAfter": ["fe00fee5b2673a60", "feede49cda2147a9"] },
+							{ "AddItemAfter": ["fe00fee5b2673a60", "feed3e8cabb44634"] }
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"100cd694f6c447a2",
+				{ "RemoveEventConnection": ["Lerp", "TieRoughnessMin", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"100cd694f6c447a2",
+				{ "AddEventConnection": ["Lerp", "TieRoughnessMin", "feede49cda2147a9"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5b897aa1f0ff6d66",
+				{ "RemoveEventConnection": ["Lerp", "Shirt_RoughnessMin", "feedd427af5e88a5"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5b897aa1f0ff6d66",
+				{ "AddEventConnection": ["Lerp", "Shirt_RoughnessMin", "feed3e8cabb44634"] }
+			]
+		},
+		{ "SubEntityOperation": ["feedd427af5e88a5", { "SetName": "Agent47_S2_Suit_Jacket" }] },
+		{
+			"SubEntityOperation": [
+				"feedd427af5e88a5",
+				{ "RemoveAllInputCopyConnectionsForInput": "JacketSleave_RoughnessMin" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feedd427af5e88a5",
+				{ "RemoveAllInputCopyConnectionsForInput": "JacketSleave_NormalBump" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feedd427af5e88a5",
+				{ "RemoveAllInputCopyConnectionsForInput": "JacketSleave_DiffuseAlbedo" }
+			]
+		},
+		{ "SubEntityOperation": ["feedd427af5e88a5", { "RemoveAllInputCopyConnectionsForInput": "Shirt_RoughnessMin" }] },
+		{ "SubEntityOperation": ["feedd427af5e88a5", { "RemoveAllInputCopyConnectionsForInput": "Shirt_NormalBump" }] },
+		{ "SubEntityOperation": ["feedd427af5e88a5", { "RemoveAllInputCopyConnectionsForInput": "Shirt_DiffuseAlbedo" }] },
+		{ "SubEntityOperation": ["feedd427af5e88a5", { "RemoveAllInputCopyConnectionsForInput": "TieRoughnessMin" }] },
+		{ "SubEntityOperation": ["feed1ccff1e5ada4", { "SetParent": "feede49cda2147a9" }] },
+		{
+			"SubEntityOperation": [
+				"feed1ccff1e5ada4",
+				{
+					"PatchArrayPropertyValue": [
+						"Clients",
+						[{ "RemoveItemByValue": "feedd427af5e88a5" }, { "AddItem": "feede49cda2147a9" }]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed5815a57a9bc8",
+				{
+					"SetPropertyValue": {
+						"property_name": "Texture2D_01",
+						"value": { "resource": "00B50E687B6C87A1", "flag": "5F" }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed5815a57a9bc8",
+				{
+					"SetPropertyValue": {
+						"property_name": "Texture2D_03",
+						"value": { "resource": "0094EE70B78A825F", "flag": "5F" }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed5815a57a9bc8",
+				{
+					"AddProperty": [
+						"Texture2DNormal_01",
+						{ "type": "ZRuntimeResourceID", "value": { "resource": "004945EDF359FB75", "flag": "5F" } }
+					]
+				}
+			]
+		},
+		{ "SubEntityOperation": ["feed1c8d0ca0c5d9", { "SetParent": "feed3e8cabb44634" }] },
+		{
+			"SubEntityOperation": [
+				"feed1c8d0ca0c5d9",
+				{
+					"PatchArrayPropertyValue": [
+						"Clients",
+						[{ "RemoveItemByValue": "feedd427af5e88a5" }, { "AddItem": "feed3e8cabb44634" }]
+					]
+				}
+			]
+		},
+		{ "SubEntityOperation": ["feed8b9e8f833b4d", { "SetParent": "feed3e8cabb44634" }] },
+		{
+			"SubEntityOperation": [
+				"feed8b9e8f833b4d",
+				{
+					"PatchArrayPropertyValue": [
+						"Clients",
+						[{ "RemoveItemByValue": "feedd427af5e88a5" }, { "AddItem": "feed3e8cabb44634" }]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed7d8a88675511",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_pMeshResource",
+						"value": { "resource": "00FE5C9DA84E5B7B", "flag": "5F" }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feed3e8cabb44634",
+				{
+					"parent": "061fccbd164422a2",
+					"name": "Agent47_S2_Suit_Shirt",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"inputCopying": {
+						"Shirt_RoughnessMin": { "ConstantVector1D_14_Value": ["feed1c8d0ca0c5d9"] },
+						"Shirt_NormalBump": { "ConstantVector1D_06_Value": ["feed1c8d0ca0c5d9"] },
+						"Shirt_DiffuseAlbedo": { "ConstantVector1D_01_Value": ["feed1c8d0ca0c5d9"] },
+						"JacketSleave_RoughnessMin": { "ConstantVector1D_14_Value": ["feed8b9e8f833b4d"] },
+						"JacketSleave_NormalBump": { "ConstantVector1D_06_Value": ["feed8b9e8f833b4d"] },
+						"JacketSleave_DiffuseAlbedo": { "ConstantVector1D_01_Value": ["feed8b9e8f833b4d"] }
+					},
+					"exposedInterfaces": { "ZBodyPartEntity": "feed35c6ccd666c2" }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feed35c6ccd666c2",
+				{
+					"parent": "feed3e8cabb44634",
+					"name": "Agent47_S2_Suit_Shirt_Mesh",
+					"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zbodypartentity.class].entitytype,[modules:/zclothcollidergroupaspect.class].entitytype).pc_entitytype",
+					"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zbodypartentity.class].entitytype,[modules:/zclothcollidergroupaspect.class].entitytype).pc_entityblueprint",
+					"properties": {
+						"m_pMeshResource": {
+							"type": "ZRuntimeResourceID",
+							"value": { "resource": "00ADCB1F7A5DC938", "flag": "5F" }
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feede49cda2147a9",
+				{
+					"parent": "061fccbd164422a2",
+					"name": "Agent47_S2_Suit_Tie",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"inputCopying": { "TieRoughnessMin": { "ConstantVector1D_04_Value": ["feed1ccff1e5ada4"] } },
+					"exposedInterfaces": { "ZBodyPartEntity": "feed4da6fb733b33" }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feed4da6fb733b33",
+				{
+					"parent": "feede49cda2147a9",
+					"name": "Agent47_S2_Suit_Tie_Mesh",
+					"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zbodypartentity.class].entitytype,[modules:/zclothcollidergroupaspect.class].entitytype).pc_entitytype",
+					"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zbodypartentity.class].entitytype,[modules:/zclothcollidergroupaspect.class].entitytype).pc_entityblueprint",
+					"properties": {
+						"m_pMeshResource": {
+							"type": "ZRuntimeResourceID",
+							"value": { "resource": "00A918A2FA87C82F", "flag": "5F" }
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

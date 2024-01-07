@@ -41,6 +41,18 @@
 		},
 		{
 			"group": "Variant - Signature Suit",
+			"name": "Buttoned (Suburban)",
+			"tooltip": "Suburban Suit-styled buttoned jacket. Wider lapels, pockets are lower down and exposes less of the shirt, tie and belt.",
+			"type": "select",
+			"contentFolders": [
+				"variant/nogloves/buttoned_suburban",
+				"variant_assets/buttoned",
+				"variant_assets/buttoned_suburban"
+			],
+			"image": "buttoned_suburban.jpg"
+		},
+		{
+			"group": "Variant - Signature Suit",
 			"name": "Tie clip",
 			"tooltip": "With tie clip.",
 			"type": "select",
@@ -61,6 +73,18 @@
 			"type": "select",
 			"contentFolders": ["variant/gloves/buttoned", "variant_assets/buttoned"],
 			"image": "buttoned.jpg"
+		},
+		{
+			"group": "Variant - Signature Suit with Gloves",
+			"name": "Buttoned (Suburban)",
+			"tooltip": "Suburban Suit-styled buttoned jacket. Wider lapels, pockets are lower down and exposes less of the shirt, tie and belt.",
+			"type": "select",
+			"contentFolders": [
+				"variant/gloves/buttoned_suburban",
+				"variant_assets/buttoned",
+				"variant_assets/buttoned_suburban"
+			],
+			"image": "buttoned_suburban.jpg"
 		},
 		{
 			"group": "Variant - Signature Suit with Gloves",
