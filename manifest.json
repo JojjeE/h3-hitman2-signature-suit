@@ -9,20 +9,46 @@
 	"dependencies": ["007749C5E756ACF0"],
 	"options": [
 		{
-			"group": "Install",
+			"group": "Signature Suit",
+			"name": "Do not install",
+			"tooltip": "Do not replace the Signature Suit.",
+			"type": "select"
+		},
+		{
+			"group": "Signature Suit",
 			"name": "Signature Suit",
 			"tooltip": "Replace the Signature Suit.",
-			"type": "checkbox",
-			"contentFolders": ["base/nogloves"],
+			"type": "select",
+			"contentFolders": ["base/nogloves/withoutgloves"],
 			"enabledByDefault": true
 		},
 		{
-			"group": "Install",
+			"group": "Signature Suit",
 			"name": "Signature Suit with Gloves",
-			"tooltip": "Replace the Signature Suit with Gloves.",
-			"type": "checkbox",
-			"contentFolders": ["base/gloves"],
+			"tooltip": "Replace the Signature Suit, with the H2 suit, with gloves.",
+			"type": "select",
+			"contentFolders": ["base/nogloves/withgloves"]
+		},
+		{
+			"group": "Signature Suit with Gloves",
+			"name": "Do not install",
+			"tooltip": "Do not replace the Signature Suit with Gloves.",
+			"type": "select"
+		},
+		{
+			"group": "Signature Suit with Gloves",
+			"name": "Signature Suit with Gloves",
+			"tooltip": "Replace the Signature Suit with Gloves, with the H2 suit, with gloves.",
+			"type": "select",
+			"contentFolders": ["base/gloves/withgloves"],
 			"enabledByDefault": true
+		},
+		{
+			"group": "Signature Suit with Gloves",
+			"name": "Signature Suit",
+			"tooltip": "Replace the Signature Suit with Gloves, with the H2 suit.",
+			"type": "select",
+			"contentFolders": ["base/gloves/withoutgloves"]
 		},
 		{
 			"group": "Variant - Signature Suit",

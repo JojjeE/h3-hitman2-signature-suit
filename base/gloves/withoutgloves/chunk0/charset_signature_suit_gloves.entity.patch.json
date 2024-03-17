@@ -1,0 +1,19 @@
+{
+	"tempHash": "00CD93E92412E999",
+	"tbluHash": "00AF9FA5EF034C1D",
+	"patch": [
+		{ "SubEntityOperation": ["23e4c404269b5172", { "SetName": "CHARSET_Agent47_H2_SignatureSuit_Gloves" }] },
+		{
+			"SubEntityOperation": [
+				"e62be04703687fe3",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_Outfit",
+						"value": { "resource": "00F8243D5271624C", "flag": "9F" }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
