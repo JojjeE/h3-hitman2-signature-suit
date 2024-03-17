@@ -164,7 +164,7 @@
 				{
 					"AddProperty": [
 						"Texture2DNormal_01",
-						{ "type": "ZRuntimeResourceID", "value": { "resource": "004945EDF359FB75", "flag": "5F" } }
+						{ "type": "ZRuntimeResourceID", "value": { "resource": "0051083125C5C45F", "flag": "5F" } }
 					]
 				}
 			]
