@@ -1,125 +1,185 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.3.1",
+	"$schema": "../../manifest-schema.json",
 	"id": "Jojje.H2SignatureSuit",
 	"name": "Hitman 2 Signature Suit",
 	"description": "Use the Hitman 2 signature suit instead of Hitman 3.",
 	"authors": ["Jojje"],
-	"frameworkVersion": "2.33.26",
-	"dependencies": ["007749C5E756ACF0"],
+	"version": "1.3.1",
+	"frameworkVersion": "3.0.0-rc.1",
+	"url": "https://github.com/JojjeE/h3-hitman2-signature-suit",
+	"conditions": { "supportedGames": ["h3"] },
 	"options": [
 		{
-			"group": "Signature Suit",
-			"name": "Do not install",
-			"tooltip": "Do not replace the Signature Suit.",
-			"type": "select"
-		},
-		{
-			"group": "Signature Suit",
+			"id": "sig",
+			"type": "selection",
 			"name": "Signature Suit",
-			"tooltip": "Replace the Signature Suit.",
-			"type": "select",
-			"contentFolders": ["base/nogloves/withoutgloves"],
-			"enabledByDefault": true
+			"defaultValue": "sig-sig",
+			"options": [
+				{
+					"id": "sig-dni",
+					"name": "Do not install",
+					"description": "Do not replace the Signature Suit."
+				},
+				{
+					"id": "sig-sig",
+					"name": "Signature Suit",
+					"description": "Replace the Signature Suit, with the H2 suit.",
+					"data": {
+						"contentFolders": ["base/nogloves/withoutgloves"]
+					}
+				},
+				{
+					"id": "sig-gloves",
+					"name": "Signature Suit with Gloves",
+					"description": "Replace the Signature Suit, with the H2 suit, with gloves.",
+					"data": {
+						"contentFolders": ["base/nogloves/withgloves"]
+					}
+				}
+			]
 		},
 		{
-			"group": "Signature Suit",
+			"id": "siggloves",
+			"type": "selection",
 			"name": "Signature Suit with Gloves",
-			"tooltip": "Replace the Signature Suit, with the H2 suit, with gloves.",
-			"type": "select",
-			"contentFolders": ["base/nogloves/withgloves"]
+			"defaultValue": "siggloves-siggloves",
+			"options": [
+				{
+					"id": "siggloves-dni",
+					"name": "Do not install",
+					"description": "Do not replace the Signature Suit with Gloves."
+				},
+				{
+					"id": "siggloves-sig",
+					"name": "Signature Suit",
+					"description": "Replace the Signature Suit with Gloves, with the H2 suit.",
+					"data": {
+						"contentFolders": ["base/gloves/withoutgloves"]
+					}
+				},
+				{
+					"id": "siggloves-siggloves",
+					"name": "Signature Suit with Gloves",
+					"description": "Replace the Signature Suit with Gloves, with the H2 suit, with gloves.",
+					"data": {
+						"contentFolders": ["base/gloves/withgloves"]
+					}
+				}
+			]
 		},
 		{
-			"group": "Signature Suit with Gloves",
-			"name": "Do not install",
-			"tooltip": "Do not replace the Signature Suit with Gloves.",
-			"type": "select"
-		},
-		{
-			"group": "Signature Suit with Gloves",
-			"name": "Signature Suit with Gloves",
-			"tooltip": "Replace the Signature Suit with Gloves, with the H2 suit, with gloves.",
-			"type": "select",
-			"contentFolders": ["base/gloves/withgloves"],
-			"enabledByDefault": true
-		},
-		{
-			"group": "Signature Suit with Gloves",
+			"id": "variants-sig",
+			"type": "optionGroup",
 			"name": "Signature Suit",
-			"tooltip": "Replace the Signature Suit with Gloves, with the H2 suit.",
-			"type": "select",
-			"contentFolders": ["base/gloves/withoutgloves"]
-		},
-		{
-			"group": "Variant - Signature Suit",
-			"name": "Default",
-			"tooltip": "No change.",
-			"type": "select",
-			"enabledByDefault": true
-		},
-		{
-			"group": "Variant - Signature Suit",
-			"name": "Buttoned",
-			"tooltip": "Buttoned jacket.",
-			"type": "select",
-			"contentFolders": ["variant/nogloves/buttoned", "variant_assets/buttoned"],
-			"image": "buttoned.jpg"
-		},
-		{
-			"group": "Variant - Signature Suit",
-			"name": "Buttoned (Suburban)",
-			"tooltip": "Suburban Suit-styled buttoned jacket. Wider lapels, pockets are lower down and exposes less of the shirt, tie and belt.",
-			"type": "select",
-			"contentFolders": [
-				"variant/nogloves/buttoned_suburban",
-				"variant_assets/buttoned",
-				"variant_assets/buttoned_suburban"
+			"options": [
+				{
+					"id": "sig-variant",
+					"type": "selection",
+					"name": "Variant",
+					"defaultValue": "sig-variant-default",
+					"options": [
+						{
+							"id": "sig-variant-default",
+							"name": "Default",
+							"description": "No change."
+						},
+						{
+							"id": "sig-variant-buttoned",
+							"name": "Buttoned",
+							"description": "Buttoned jacket.",
+							"image": "buttoned.jpg",
+							"data": {
+								"contentFolders": [
+									"variant/nogloves/buttoned",
+									"variant_assets/buttoned"
+								]
+							}
+						},
+						{
+							"id": "sig-variant-suburban",
+							"name": "Buttoned (Suburban)",
+							"description": "Suburban Suit-styled buttoned jacket. Wider lapels, pockets are lower down and exposes less of the shirt, tie and belt.",
+							"image": "buttoned_suburban.jpg",
+							"data": {
+								"contentFolders": [
+									"variant/nogloves/buttoned_suburban",
+									"variant_assets/buttoned",
+									"variant_assets/buttoned_suburban"
+								]
+							}
+						},
+						{
+							"id": "sig-variant-tieclip",
+							"name": "Tie clip",
+							"description": "With tie clip.",
+							"image": "tieclip.jpg",
+							"data": {
+								"contentFolders": [
+									"variant/nogloves/tieclip"
+								]
+							}
+						}
+					]
+				}
 			],
-			"image": "buttoned_suburban.jpg"
+			"displayCondition": "mod_option(\"Jojje.H2SignatureSuit@1.3.1\", \"sig\") != Some(\"sig-dni\")"
 		},
 		{
-			"group": "Variant - Signature Suit",
-			"name": "Tie clip",
-			"tooltip": "With tie clip.",
-			"type": "select",
-			"contentFolders": ["variant/nogloves/tieclip"],
-			"image": "tieclip.jpg"
-		},
-		{
-			"group": "Variant - Signature Suit with Gloves",
-			"name": "Default",
-			"tooltip": "No change.",
-			"type": "select",
-			"enabledByDefault": true
-		},
-		{
-			"group": "Variant - Signature Suit with Gloves",
-			"name": "Buttoned",
-			"tooltip": "Buttoned jacket.",
-			"type": "select",
-			"contentFolders": ["variant/gloves/buttoned", "variant_assets/buttoned"],
-			"image": "buttoned.jpg"
-		},
-		{
-			"group": "Variant - Signature Suit with Gloves",
-			"name": "Buttoned (Suburban)",
-			"tooltip": "Suburban Suit-styled buttoned jacket. Wider lapels, pockets are lower down and exposes less of the shirt, tie and belt.",
-			"type": "select",
-			"contentFolders": [
-				"variant/gloves/buttoned_suburban",
-				"variant_assets/buttoned",
-				"variant_assets/buttoned_suburban"
+			"id": "variants-siggloves",
+			"type": "optionGroup",
+			"name": "Signature Suit with Gloves",
+			"options": [
+				{
+					"id": "siggloves-variant",
+					"type": "selection",
+					"name": "Variant",
+					"defaultValue": "siggloves-variant-default",
+					"options": [
+						{
+							"id": "siggloves-variant-default",
+							"name": "Default",
+							"description": "No change."
+						},
+						{
+							"id": "siggloves-variant-buttoned",
+							"name": "Buttoned",
+							"description": "Buttoned jacket.",
+							"image": "buttoned.jpg",
+							"data": {
+								"contentFolders": [
+									"variant/gloves/buttoned",
+									"variant_assets/buttoned"
+								]
+							}
+						},
+						{
+							"id": "siggloves-variant-suburban",
+							"name": "Buttoned (Suburban)",
+							"description": "Suburban Suit-styled buttoned jacket. Wider lapels, pockets are lower down and exposes less of the shirt, tie and belt.",
+							"image": "buttoned_suburban.jpg",
+							"data": {
+								"contentFolders": [
+									"variant/gloves/buttoned_suburban",
+									"variant_assets/buttoned",
+									"variant_assets/buttoned_suburban"
+								]
+							}
+						},
+						{
+							"id": "siggloves-variant-tieclip",
+							"name": "Tie clip",
+							"description": "With tie clip.",
+							"image": "tieclip.jpg",
+							"data": {
+								"contentFolders": [
+									"variant/gloves/tieclip"
+								]
+							}
+						}
+					]
+				}
 			],
-			"image": "buttoned_suburban.jpg"
-		},
-		{
-			"group": "Variant - Signature Suit with Gloves",
-			"name": "Tie clip",
-			"tooltip": "With tie clip.",
-			"type": "select",
-			"contentFolders": ["variant/gloves/tieclip"],
-			"image": "tieclip.jpg"
+			"displayCondition": "mod_option(\"Jojje.H2SignatureSuit@1.3.1\", \"siggloves\") != Some(\"siggloves-dni\")"
 		}
-	],
-	"updateCheck": "https://github.com/JojjeE/h3-hitman2-signature-suit/releases/latest/download/updates.json"
+	]
 }
