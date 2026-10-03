@@ -29,7 +29,7 @@
 					}
 				},
 				{
-					"id": "sig-gloves",
+					"id": "sig-siggloves",
 					"name": "Signature Suit with Gloves",
 					"description": "Replace the Signature Suit, with the H2 suit, with gloves.",
 					"data": {
